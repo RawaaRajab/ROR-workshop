@@ -1,0 +1,7 @@
+<h2><%= @entry.title %></h2>
+  <p><%= @entry.date %></p>
+  <p><%= @entry.contents %></p>
+
+      <%= link_to("Edit", edit_entry_path) %>
+<br>
+      <%= link_to("Delete", entry_path, method: :delete, data: {confirm: 'Are you sure?'}) %>
